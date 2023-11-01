@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geometry genius</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-      
+        <header>
+
+        </header>
+
+        <main>
+              <!--Container  -->
+              <div class="flex flex-col lg:flex-row">
+                <!-- Shape Container -->
+                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" id="triangle-base" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" id="triangle-height" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                           <p class="text-2xl">Aria: <span id="AriaTotal"></span></p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary w-72" id="triangle-btn" onclick="getTriangleCalculate()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- second Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- First Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Triangle</h2>
+                          <p class="text-2xl">Area (A)= 0.5 X base X height</p>
+                          <p>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Base"><span class="text-2xl mx-2">CM</span>
+                            <input type="text" class="border border-gray-300 w-20 text-2xl px-2" placeholder="Height"><span class="text-2xl ml-2">CM</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                   <div class="border border-gray-600 mr-3  h-[400px] ">
+                     <!-- Area Calculator -->
+                    <div class="text-4xl p-4 underline">Area Calculator</div>
+                   </div>
+              </div>
+        </main>
+
+        <script src="js/utility.js"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>
