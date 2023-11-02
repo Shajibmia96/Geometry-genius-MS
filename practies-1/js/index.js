@@ -7,7 +7,13 @@ function getRectangleCalculate(){
     const getLengthElement = document.getElementById("rectangle-length");
     const getLength = parseFloat(getLengthElement.value);  
     getLengthElement.value = '';
+ 
+  if(isNaN(getWidth) || isNaN(getLength)){
+        alert ("Please input a number");
+       return;
+     }
     const rectangleTotal  = getWidth * getLength
     const rectangle =document.getElementById("Rectangle-total");
      rectangle.innerText = rectangleTotal; 
+     
 }

@@ -31,7 +31,9 @@ function getParallelogramCalculate(){
    const  getParallelogramHeight = inputFieldElement("parallelogram-height")
    // console.log(getParallelogramHeight)
    const totalAreaParallelogram = getParallelogramBase * getParallelogramHeight;
-   setInnerText("parallelogram-total" , totalAreaParallelogram)
+   setInnerText("parallelogram-total" , totalAreaParallelogram);
+  //Add to calculation
+   setCalculation( )
 }
 
 // Rhombus calculate
@@ -48,6 +50,10 @@ function getRhombusCalculate(){
   function getPentagonCalculate(){
      const p = inputFieldElement ("pentagon-pade");
      const b = inputFieldElement("pentagon-base");
+     if(isNaN(p) || isNaN(b)){
+      alert("input a number")
+      return;
+     }
      const pentagonTotal = 0.5 * p * b;
      setInnerText("pentagon-total" , pentagonTotal)
   }
@@ -55,7 +61,7 @@ function getRhombusCalculate(){
   function getEllipseCalculate(){
       const EllipseA = inputFieldElement("ellipse-base")
       const EllipseB = inputFieldElement("ellipse-height")
-      const EllipseTotal = 3.1416* EllipseA *EllipseB;
+      const EllipseTotal = (Math.PI* EllipseA *EllipseB).toFixed(1);
        
       setInnerText ("ellipse-total" ,EllipseTotal);
   }
@@ -77,4 +83,10 @@ function inputFieldElement (fieldId){
  function setInnerText(spanId , area){
     const setText = document.getElementById(spanId) ;
     setText.innerText =area
+ }
+
+//   find element in Calculation section
+
+ function setCalculation(){
+     console.log("hello")
  }
