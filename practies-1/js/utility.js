@@ -23,3 +23,32 @@
 //  getTriangleCalculate("triangle-base")
 // //  getTriangleCalculate("triangle-height")
 
+
+// function for parallelogram
+function getParallelogramCalculate(){
+   const getParallelogramBase = inputFieldElement("parallelogram-base") ;
+   // console.log(getParallelogramBase)
+   const  getParallelogramHeight = inputFieldElement("parallelogram-height")
+   // console.log(getParallelogramHeight)
+   const totalAreaParallelogram = getParallelogramBase * getParallelogramHeight;
+   setInnerText("parallelogram-total" , totalAreaParallelogram)
+}
+
+//reuseable get number for an input field Function
+
+function inputFieldElement (fieldId){
+    const inputFieldText = document.getElementById(fieldId);
+    const inputValue = inputFieldText.value;
+   //  inputFieldText.value = '';
+   //  inputFieldText.value = "";
+     const value = parseFloat (inputValue)
+    return value;
+
+}
+
+// Reuseable set a number function
+
+ function setInnerText(spanId , area){
+    const setText = document.getElementById(spanId) ;
+    setText.innerText =area
+ }

@@ -17,7 +17,7 @@
               <!--Container  -->
               <div class="flex flex-col lg:flex-row">
                 <!-- Shape Container -->
-                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- Triangle Card -->
                     <div class="card w-96 bg-base-100 shadow-xl mt-5">
                         <figure class="px-10 pt-10">
@@ -37,7 +37,7 @@
                           </div>
                         </div>
                       </div>
-                <!-- Triangle Card -->
+                <!-- Rectangle Card -->
                     <div class="card w-96 bg-base-100 shadow-xl mt-5">
                         <figure class="px-10 pt-10">
                           <img src="../geometry-genius-resources/images/rectangle.png" alt="Shoes" class="rounded-xl" />
@@ -53,6 +53,25 @@
                            <p class="text-2xl">Aria: <span id="Rectangle-total">00</span> cm<sup>2</sup></p>
                           <div class="card-actions">
                             <button class="btn btn-primary w-72" id="rectangle-btn" onclick="getRectangleCalculate()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- Parallelogram Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">parallelogram</h2>
+                          <p class="text-2xl">Area (A)= bX h</p>
+                         <p>
+                            <input type="text" id="parallelogram-base" class="border border-gray-300 w-20 text-2xl px-2" placeholder="base">
+                            <span class="text-2xl mx-2">cm</span>
+                            <input type="text" id="parallelogram-height" class="border border-gray-300 w-20 text-2xl px-2" placeholder="height"><span class="text-2xl ml-2">cm</span>
+                          </p>
+                           <p class="text-2xl">Aria: <span id="parallelogram-total">00</span> cm<sup>2</sup></p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary w-72" id="parallelogram-btn" onclick="getParallelogramCalculate()">Calculate</button>
                           </div>
                         </div>
                       </div>
