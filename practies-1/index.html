@@ -63,7 +63,7 @@
                         </figure>
                         <div class="card-body items-center text-center space-y-3">
                           <h2 class="card-title text-3xl">parallelogram</h2>
-                          <p class="text-2xl">Area (A)= bX h</p>
+                          <p class="text-2xl">Area (A)= b X h</p>
                          <p>
                             <input type="text" id="parallelogram-base" class="border border-gray-300 w-20 text-2xl px-2" placeholder="base">
                             <span class="text-2xl mx-2">cm</span>
@@ -72,6 +72,63 @@
                            <p class="text-2xl">Aria: <span id="parallelogram-total">00</span> cm<sup>2</sup></p>
                           <div class="card-actions">
                             <button class="btn btn-primary w-72" id="parallelogram-btn" onclick="getParallelogramCalculate()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- rhombus Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Rhombus</h2>
+                          <p class="text-2xl">Area (A)= 1/2 d<sub>1</sub> X d<sub>2</sub></p>
+                         <p>
+                            <input type="text" id="rhombus-d1" class="border border-gray-300 w-20 text-2xl px-2" placeholder="d1">
+                            <span class="text-2xl mx-2">cm</span>
+                            <input type="text" id="rhombus-d2" class="border border-gray-300 w-20 text-2xl px-2" placeholder="d2"><span class="text-2xl ml-2">cm</span>
+                          </p>
+                           <p class="text-2xl">Aria: <span id="rhombus-total">00</span> cm<sup>2</sup></p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary w-72" id="rhombus-btn" onclick="getRhombusCalculate()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- pentagon Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Pentagon</h2>
+                          <p class="text-2xl">Area (A)= 1/2 X p X b </p>
+                         <p>
+                            <input type="text" id="pentagon-pade" class="border border-gray-300 w-20 text-2xl px-2" placeholder="P">
+                            <span class="text-2xl mx-2">cm</span>
+                            <input type="text" id="pentagon-base" class="border border-gray-300 w-20 text-2xl px-2" placeholder="b"><span class="text-2xl ml-2">cm</span>
+                          </p>
+                           <p class="text-2xl">Aria: <span id="pentagon-total">00</span> cm<sup>2</sup></p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary w-72" id="pentagon-btn" onclick="getPentagonCalculate()">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                <!-- ellipse Card -->
+                    <div class="card w-96 bg-base-100 shadow-xl mt-5">
+                        <figure class="px-10 pt-10">
+                          <img src="../geometry-genius-resources/images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-3">
+                          <h2 class="card-title text-3xl">Ellipse</h2>
+                          <p>
+                            <input type="text" id="ellipse-base" class="border border-gray-300 w-20 text-2xl px-2" placeholder="base">
+                            <span class="text-2xl mx-2">cm</span>
+                            <input type="text" id="ellipse-height" class="border border-gray-300 w-20 text-2xl px-2" placeholder="height"><span class="text-2xl ml-2">cm</span>
+                          </p>
+                          <p class="text-2xl">Aria: <span id="ellipse-total">00</span> cm<sup>2</sup></p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary w-72" id="ellipse-btn" onclick="getEllipseCalculate()">Calculate</button>
+                            <p class="text-2xl">Area (A)= πab</p>
                           </div>
                         </div>
                       </div>

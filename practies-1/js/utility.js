@@ -34,6 +34,32 @@ function getParallelogramCalculate(){
    setInnerText("parallelogram-total" , totalAreaParallelogram)
 }
 
+// Rhombus calculate
+function getRhombusCalculate(){
+    const d1Value = inputFieldElement('rhombus-d1');
+    const d2Value = inputFieldElement('rhombus-d2');
+    const rhombusTotal = 0.5 * d1Value *d2Value;
+     
+    setInnerText("rhombus-total" , rhombusTotal)
+
+}
+
+//Pentagon Function
+  function getPentagonCalculate(){
+     const p = inputFieldElement ("pentagon-pade");
+     const b = inputFieldElement("pentagon-base");
+     const pentagonTotal = 0.5 * p * b;
+     setInnerText("pentagon-total" , pentagonTotal)
+  }
+
+  function getEllipseCalculate(){
+      const EllipseA = inputFieldElement("ellipse-base")
+      const EllipseB = inputFieldElement("ellipse-height")
+      const EllipseTotal = 3.1416* EllipseA *EllipseB;
+       
+      setInnerText ("ellipse-total" ,EllipseTotal);
+  }
+
 //reuseable get number for an input field Function
 
 function inputFieldElement (fieldId){
