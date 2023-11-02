@@ -15,5 +15,6 @@ function getRectangleCalculate(){
     const rectangleTotal  = getWidth * getLength
     const rectangle =document.getElementById("Rectangle-total");
      rectangle.innerText = rectangleTotal; 
-     
+     //Add to calculation
+   setCalculation( 'Rectangle' ,rectangleTotal)
 }
