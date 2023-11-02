@@ -63,6 +63,7 @@ setCalculation( "Rhombus" , rhombusTotal)
      }
      const pentagonTotal = 0.5 * p * b;
      setInnerText("pentagon-total" , pentagonTotal)
+     setCalculation( 'Pentagon' , pentagonTotal)
   }
 
   function getEllipseCalculate(){
