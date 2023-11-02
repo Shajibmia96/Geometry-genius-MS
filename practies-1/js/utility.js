@@ -11,6 +11,10 @@
     const inputValueHeight  = parseFloat(getInputValueHeight);
    //  return inputValue;
    //  console.log(inputValue)
+   if(isNaN(inputValueBase) || isNaN(inputValueHeight)){
+      alert ("Please input a number");
+     return;
+   }
    const aria = 1/2* inputValueBase * inputValueHeight;
    // console.log(aria);
 
